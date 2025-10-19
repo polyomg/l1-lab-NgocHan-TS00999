@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tính HCN</title>
+</head>
+<body>
+    <form action="/rect/calc" method="post">
+        Chiều dài: <input type="number" name="length"/> <br/>
+        Chiều rộng: <input type="number" name="width"/> <br/>
+        <button type="submit">Tính</button>
+    </form>
+
+    <p th:text="${result}"></p>
+</body>
+</html>
