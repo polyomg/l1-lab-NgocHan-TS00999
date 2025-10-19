@@ -1,0 +1,15 @@
+<!-- bai3_form.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<form action="/product3/save" method="post">
+    <input name="name">
+    <input name="price">
+    <button>Save</button>
+</form>
+<ul>
+    <li th:text="${name}">?name</li>
+    <li th:text="${price}">?price</li>
+</ul>
+</body>
+</html>
